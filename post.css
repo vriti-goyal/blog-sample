@@ -1,0 +1,388 @@
+*{
+    margin:0;
+    padding:0;
+    border:border-box;
+}
+.side{
+    font-family:Verdana, Geneva, Tahoma, sans-serifs;
+    font-style: italic;
+    color:#626364;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #d3d3d3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.border:hover{
+    border:2px solid #145DA0;
+}
+.nav-bar{
+    background-color: white;
+    height:12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+.home{
+    width:20%;
+    padding-left:10px;
+}
+.home-link{
+    display: flex;
+    align-items: center;
+}
+.home-icon{
+    font-size: 1.8rem;
+    color:#145DA0;
+}
+.back-home{
+    font-weight: bolder;
+    font-size: 1.22rem;
+    color:#0C2D48;
+}
+
+/*search box*/
+
+.search{
+    display:flex;
+    width:30%;
+    justify-content: center;
+}
+
+.search-bar input{
+    border:none;
+    width:250px;
+    height:25px;
+}
+
+.search-bar{
+    width:250px;
+    border-left:2px solid #0C2D48;
+    border-top:2px solid #0C2D48;
+    border-bottom:2px solid #0C2D48;
+    height:25px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+    width:35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0C2D48;
+    color:white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/*elements box*/
+
+.nav-ele{
+    width:50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size:1.2rem;
+}
+.nav-ele a{
+    border:2px solid transparent;
+    color:#0C2D48;
+    font-weight: bold;
+}
+
+/***left panel***/
+.body-to{
+    height:88vh;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    display: flex;
+    background-color:#d3d3d3;
+}
+
+.similar{
+    width:20%;
+    background-color: #0C2D48;
+    display: flex;
+    flex-direction: column;
+}
+
+.similar-posts{
+    align-self: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color:white;
+    font-size: 1.8rem;
+}
+
+.other-posts{
+    color:white;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-style: italic;
+}
+
+/** actual post**/
+
+.post{
+    background-color: white;
+    margin:20px;
+    width:80%;
+    display: flex;
+}
+.content{
+    background-color: white;
+    width:65%;
+    height: 100%;
+}
+/**user info**/
+
+.about-user{
+    width:100%;
+    height:20%;
+    display: flex;
+
+}
+.user-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    height:100%;
+}
+.user-logo-dp{
+    width:70%;
+    height: 80%;
+    background-image: url("user-dp.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.user-data{
+    width:80%;
+    height:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+.user-data1{
+    display: flex;
+    align-items: center;
+}
+.user-name{
+    font-size: 1.4rem;
+}
+
+.follow{
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+.user-data2{
+    font-size:0.8rem;
+}
+
+/**content**/
+.scroll-container { 
+    height:90%;
+    overflow-y: scroll; 
+} 
+
+.user-content{
+    height:60%;
+}
+.title{
+    height:15%;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.data{
+    font-size: 1.2rem;
+    height: 85%;
+}
+
+
+/**voting**/
+
+.user-action{
+    width:100%;
+    height:20%;
+    background-color: white;
+    display: flex;
+    background-color: #145DA0;
+}
+
+.vote{
+    height: 100%;
+    width:70%;
+    display: flex;
+    align-items: center;
+}
+.vote-button{
+    background-color: #145DA0;
+    font-size: 3rem;
+    margin-left:15px;
+    color:#B1D4E0;
+    border: none;
+}
+
+.share{
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share button{
+    width:100px;
+    padding:10px;
+    background-color: #B1D4E0;
+    color:#0C2D48;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius:4px;
+}
+
+
+/**comment section***/
+.com{
+    height: 100%;
+    width:35%;
+}
+.comment{
+    background-color: #B1D4E0;
+    height: 80%;
+    width:100%;
+}
+
+.head-comment{
+    padding:10px;
+    font-size:1.7rem;
+    font-weight: bold;
+    color:#0C2D48;
+}
+
+/**user comment**/
+
+.comment-user{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-top:20px;
+    margin-left:5px;
+}
+
+.c-user-logo{
+    border:2px solid white;
+    width: 19%;
+    height:50px;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("user-dp.jpeg");
+    background-repeat: no-repeat;
+}
+.c-user-rest{
+    width: 81%;
+}
+
+.c-user-about{
+    display: flex;
+    align-items: center;
+}
+.c-user-name{
+    font-size: 1rem;
+}
+.c-user-posted{
+    font-size: 0.85rem;
+}
+.c-user-c{
+    font-size: 1rem;
+}
+
+
+
+.c-user-action{
+    display: flex;
+    align-items: center;
+}
+.c-user-vote{
+    font-size: 1rem;
+    width:70%;
+}
+.c-user-vote i{
+    margin-right: 10px;
+}
+.c-user-reply button{
+    border:none;
+    padding:5px;
+    background-color: #145DA0;
+    color:white;
+}
+
+
+/***main user***/
+.user-comment{
+    width:100%;
+    background-color: #0C2D48;
+    height:20%;
+}
+
+.user-input{
+    height:30%;
+    display: flex;
+    justify-content: center;
+    padding-top:5px;
+}
+.user-input input{
+    width:90%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    height:66%;
+}
+.user-about{
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+.user-about-dp{
+    border:2px solid white;
+    width: 19%;
+    height:45px;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("user-dp.jpeg");
+    background-repeat: no-repeat;
+
+}
+.user-about-name{
+    color:white;
+    padding-left:10px;
+    font-size: 1.2rem;
+}
+.post-but{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding:5px;
+}
+.post-but button{
+    font-weight: bold;
+    background-color: white;
+    padding:5px;
+    width: 100%;
+    font-size: 1rem;
+    color:#0C2D48;
+}
+
+
